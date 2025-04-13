@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Manrope:wght@200..800&display=swap');
+
+$handwritting: "Alex Brush", cursive;
+$old-black: #131313;
+$light-black: #181818;
+$normal-green: #41FF57;
+$text-lightblack: #959595;
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1rem;
+}
+
+body{
+    background-color: $old-black;
+}
+
+.App{
+    .container{
+        display: flex;
+        justify-content: center;
+
+        .wrapper{
+            max-width: 550px;
+            padding: 2rem 10px 10rem 10px;
+            width: 100%;
+
+            .home{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                .header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .left{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+
+                        h1{
+                            font-size: 1rem;
+                        }
+
+                        p{
+                            font-size: 10px;
+                            color: $text-lightblack;
+                        }
+
+                        .scard{
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            padding: 1rem 0 0 0;
+
+                            .scard-span{
+                                padding: 2px 5px;
+                                background-color: $light-black;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+
+                    .right{
+                        .photo{
+                            border-radius: 50px;
+                            background-color: $light-black;
+                            width: 4rem;
+                            height: 4rem;
+                        }
+                    }
+                }
+
+                .landing{
+                    margin-bottom: 3rem;
+
+                    .banner{
+                        display: inline-block;
+
+                        .subbanner{
+                            display: flex;
+                            gap: 5px;
+                            align-items: center;
+                            padding: 2px 5px;
+                            border-radius: 5px;
+                            background-color: $light-black;
+
+                            .greenlamp{
+                                width: 5px;
+                                height: 5px;
+                                background-color: $normal-green;
+                                border-radius: 10px;
+                            }
+
+                            p{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+
+                    .landinghead{
+                        padding: 10px 0;
+
+                        h1{
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .landingpara{
+                        p{
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .projects{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    .header{
+                        h1{
+
+                        }
+                    }
+
+                    .column{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .card{
+                            background-color: $light-black;
+                            padding: 1rem;
+                            border-radius: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+
+                            .card-a{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: start;
+
+                                .card-a-a{
+                                    background-color: $light-black;
+                                    gap: 3px;
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    h1{
+                                        font-size: 13px;
+                                    }
+
+                                    p{
+                                        font-size: 10px;
+                                        color: $text-lightblack;
+                                    }
+                                }
+
+                                .card-a-b{
+                                    background-color: $light-black;
+
+                                    span{
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+
+                            .card-b{
+                                .pro{
+                                    width: 100%;
+                                    border-radius: 13px;
+                                    height: 10rem;
+                                    background-color: $old-black;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .writing{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+
+                    .column{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .idea{
+                            display: grid;
+                            grid-template-columns: repeat(3, 20% 60% 20%);
+                            gap: 10px;
+
+                            .left{
+                                p{
+                                    font-size: 9px;
+                                    color: $text-lightblack;
+                                }
+                            }
+
+                            .middle{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 3px;
+
+                                h1{
+                                    font-size: 12px;
+                                }
+
+                                p{
+                                    font-size: 11px;
+                                    color: $text-lightblack
+                                }
+                            }
+
+                            .right{
+                                label{
+                                    font-size: 8px;
+                                    padding: 4px 8px;
+                                    background-color: $light-black;
+                                    border-radius: 1px;
+                                    letter-spacing: 1px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .footer{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 3rem;
+
+                    p{
+                        font-family: $handwritting;
+                        font-size: 2rem;
+                        font-weight: 100;
+                    }
+
+                    span{
+                        font-size: 10px;
+                        // font-style: italic;
+                        color: $text-lightblack;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px){
+        .container{
+            display: flex;
+            justify-content: center;
+
+            .wrapper{
+                max-width: 550px;
+                padding: 2rem 1rem 10rem 1rem;
+                width: 100%;
+
+                .home{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3rem;
+
+                    .header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .left{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2px;
+
+                            h1{
+                                font-size: 1rem;
+                            }
+
+                            p{
+                                font-size: 10px;
+                                color: $text-lightblack;
+                            }
+
+                            .scard{
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                                padding: 1rem 0 0 0;
+
+                                .scard-span{
+                                    padding: 2px 5px;
+                                    background-color: $light-black;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+
+                        .right{
+                            .photo{
+                                border-radius: 50px;
+                                background-color: $light-black;
+                                width: 4rem;
+                                height: 4rem;
+                            }
+                        }
+                    }
+
+                    .landing{
+                        margin-bottom: 2rem;
+
+                        .banner{
+                            display: inline-block;
+
+                            .subbanner{
+                                display: flex;
+                                gap: 5px;
+                                align-items: center;
+                                padding: 2px 5px;
+                                border-radius: 5px;
+                                background-color: $light-black;
+
+                                .greenlamp{
+                                    width: 5px;
+                                    height: 5px;
+                                    background-color: $normal-green;
+                                    border-radius: 10px;
+                                }
+
+                                p{
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+
+                        .landinghead{
+                            padding: 10px 0;
+
+                            h1{
+                                line-height: 23px;
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .landingpara{
+                            p{
+                                font-size: 12px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                    .projects{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+
+                        .header{
+                            h1{
+
+                            }
+                        }
+
+                        .column{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+
+                            .card{
+                                background-color: $light-black;
+                                padding: 1rem;
+                                border-radius: 10px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1rem;
+
+                                .card-a{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: start;
+
+                                    .card-a-a{
+                                        background-color: $light-black;
+                                        gap: 3px;
+                                        display: flex;
+                                        flex-direction: column;
+
+                                        h1{
+                                            font-size: 12px;
+                                        }
+
+                                        p{
+                                            font-size: 8px;
+                                            color: $text-lightblack;
+                                        }
+                                    }
+
+                                    .card-a-b{
+                                        background-color: $light-black;
+
+                                        span{
+                                            font-size: 7px;
+                                        }
+                                    }
+                                }
+
+                                .card-b{
+                                    .pro{
+                                        width: 100%;
+                                        border-radius: 13px;
+                                        height: 10rem;
+                                        background-color: $old-black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .writing{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+
+                        .column{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+
+                            .idea{
+                                display: grid;
+                                grid-template-columns: repeat(3, 20% 60% 20%);
+                                gap: 10px;
+
+                                .left{
+                                    padding-top: 3px;
+
+                                    p{
+                                        font-size: 6px;
+                                        color: $text-lightblack;
+                                    }
+                                }
+
+                                .middle{
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 3px;
+
+                                    h1{
+                                        font-size: 10px;
+                                    }
+
+                                    p{
+                                        font-size: 7px;
+                                        line-height: 13px;
+                                        color: $text-lightblack
+                                    }
+                                }
+
+                                .right{
+
+                                    label{
+                                        font-size: 3px;
+                                        padding: 4px 8px;
+                                        background-color: $light-black;
+                                        border-radius: 1px;
+                                        letter-spacing: 1px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .footer{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 3rem;
+
+                        p{
+                            font-family: $handwritting;
+                            font-size: 2rem;
+                            font-weight: 100;
+                        }
+
+                        span{
+                            font-size: 6px;
+                            // font-style: italic;
+                            color: $text-lightblack;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Manrope:wght@200..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  box-sizing: border-box;
+  color: white;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #131313;
+}
+
+.App .container {
+  display: flex;
+  justify-content: center;
+}
+.App .container .wrapper {
+  max-width: 550px;
+  padding: 2rem 10px 10rem 10px;
+  width: 100%;
+}
+.App .container .wrapper .home {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.App .container .wrapper .home .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.App .container .wrapper .home .header .left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.App .container .wrapper .home .header .left h1 {
+  font-size: 1rem;
+}
+.App .container .wrapper .home .header .left p {
+  font-size: 10px;
+  color: #959595;
+}
+.App .container .wrapper .home .header .left .scard {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 1rem 0 0 0;
+}
+.App .container .wrapper .home .header .left .scard .scard-span {
+  padding: 2px 5px;
+  background-color: #181818;
+  font-size: 10px;
+}
+.App .container .wrapper .home .header .right .photo {
+  border-radius: 50px;
+  background-color: #181818;
+  width: 4rem;
+  height: 4rem;
+}
+.App .container .wrapper .home .landing {
+  margin-bottom: 3rem;
+}
+.App .container .wrapper .home .landing .banner {
+  display: inline-block;
+}
+.App .container .wrapper .home .landing .banner .subbanner {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 2px 5px;
+  border-radius: 5px;
+  background-color: #181818;
+}
+.App .container .wrapper .home .landing .banner .subbanner .greenlamp {
+  width: 5px;
+  height: 5px;
+  background-color: #41FF57;
+  border-radius: 10px;
+}
+.App .container .wrapper .home .landing .banner .subbanner p {
+  font-size: 10px;
+}
+.App .container .wrapper .home .landing .landinghead {
+  padding: 10px 0;
+}
+.App .container .wrapper .home .landing .landinghead h1 {
+  font-size: 1rem;
+}
+.App .container .wrapper .home .landing .landingpara p {
+  font-size: 12px;
+}
+.App .container .wrapper .home .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.App .container .wrapper .home .projects .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.App .container .wrapper .home .projects .column .card {
+  background-color: #181818;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.App .container .wrapper .home .projects .column .card .card-a {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.App .container .wrapper .home .projects .column .card .card-a .card-a-a {
+  background-color: #181818;
+  gap: 3px;
+  display: flex;
+  flex-direction: column;
+}
+.App .container .wrapper .home .projects .column .card .card-a .card-a-a h1 {
+  font-size: 13px;
+}
+.App .container .wrapper .home .projects .column .card .card-a .card-a-a p {
+  font-size: 10px;
+  color: #959595;
+}
+.App .container .wrapper .home .projects .column .card .card-a .card-a-b {
+  background-color: #181818;
+}
+.App .container .wrapper .home .projects .column .card .card-a .card-a-b span {
+  font-size: 10px;
+}
+.App .container .wrapper .home .projects .column .card .card-b .pro {
+  width: 100%;
+  border-radius: 13px;
+  height: 10rem;
+  background-color: #131313;
+}
+.App .container .wrapper .home .writing {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.App .container .wrapper .home .writing .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.App .container .wrapper .home .writing .column .idea {
+  display: grid;
+  grid-template-columns: repeat(3, 20% 60% 20%);
+  gap: 10px;
+}
+.App .container .wrapper .home .writing .column .idea .left p {
+  font-size: 9px;
+  color: #959595;
+}
+.App .container .wrapper .home .writing .column .idea .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.App .container .wrapper .home .writing .column .idea .middle h1 {
+  font-size: 12px;
+}
+.App .container .wrapper .home .writing .column .idea .middle p {
+  font-size: 11px;
+  color: #959595;
+}
+.App .container .wrapper .home .writing .column .idea .right label {
+  font-size: 8px;
+  padding: 4px 8px;
+  background-color: #181818;
+  border-radius: 1px;
+  letter-spacing: 1px;
+}
+.App .container .wrapper .home .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.App .container .wrapper .home .footer p {
+  font-family: "Alex Brush", cursive;
+  font-size: 2rem;
+  font-weight: 100;
+}
+.App .container .wrapper .home .footer span {
+  font-size: 10px;
+  color: #959595;
+}
+@media screen and (max-width: 600px) {
+  .App .container {
+    display: flex;
+    justify-content: center;
+  }
+  .App .container .wrapper {
+    max-width: 550px;
+    padding: 2rem 1rem 10rem 1rem;
+    width: 100%;
+  }
+  .App .container .wrapper .home {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .App .container .wrapper .home .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .App .container .wrapper .home .header .left {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .App .container .wrapper .home .header .left h1 {
+    font-size: 1rem;
+  }
+  .App .container .wrapper .home .header .left p {
+    font-size: 10px;
+    color: #959595;
+  }
+  .App .container .wrapper .home .header .left .scard {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1rem 0 0 0;
+  }
+  .App .container .wrapper .home .header .left .scard .scard-span {
+    padding: 2px 5px;
+    background-color: #181818;
+    font-size: 10px;
+  }
+  .App .container .wrapper .home .header .right .photo {
+    border-radius: 50px;
+    background-color: #181818;
+    width: 4rem;
+    height: 4rem;
+  }
+  .App .container .wrapper .home .landing {
+    margin-bottom: 2rem;
+  }
+  .App .container .wrapper .home .landing .banner {
+    display: inline-block;
+  }
+  .App .container .wrapper .home .landing .banner .subbanner {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: #181818;
+  }
+  .App .container .wrapper .home .landing .banner .subbanner .greenlamp {
+    width: 5px;
+    height: 5px;
+    background-color: #41FF57;
+    border-radius: 10px;
+  }
+  .App .container .wrapper .home .landing .banner .subbanner p {
+    font-size: 10px;
+  }
+  .App .container .wrapper .home .landing .landinghead {
+    padding: 10px 0;
+  }
+  .App .container .wrapper .home .landing .landinghead h1 {
+    line-height: 23px;
+    font-size: 1rem;
+  }
+  .App .container .wrapper .home .landing .landingpara p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .App .container .wrapper .home .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .App .container .wrapper .home .projects .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .App .container .wrapper .home .projects .column .card {
+    background-color: #181818;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .App .container .wrapper .home .projects .column .card .card-a {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .App .container .wrapper .home .projects .column .card .card-a .card-a-a {
+    background-color: #181818;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+  }
+  .App .container .wrapper .home .projects .column .card .card-a .card-a-a h1 {
+    font-size: 12px;
+  }
+  .App .container .wrapper .home .projects .column .card .card-a .card-a-a p {
+    font-size: 8px;
+    color: #959595;
+  }
+  .App .container .wrapper .home .projects .column .card .card-a .card-a-b {
+    background-color: #181818;
+  }
+  .App .container .wrapper .home .projects .column .card .card-a .card-a-b span {
+    font-size: 7px;
+  }
+  .App .container .wrapper .home .projects .column .card .card-b .pro {
+    width: 100%;
+    border-radius: 13px;
+    height: 10rem;
+    background-color: #131313;
+  }
+  .App .container .wrapper .home .writing {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .App .container .wrapper .home .writing .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .App .container .wrapper .home .writing .column .idea {
+    display: grid;
+    grid-template-columns: repeat(3, 20% 60% 20%);
+    gap: 10px;
+  }
+  .App .container .wrapper .home .writing .column .idea .left {
+    padding-top: 3px;
+  }
+  .App .container .wrapper .home .writing .column .idea .left p {
+    font-size: 6px;
+    color: #959595;
+  }
+  .App .container .wrapper .home .writing .column .idea .middle {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .App .container .wrapper .home .writing .column .idea .middle h1 {
+    font-size: 10px;
+  }
+  .App .container .wrapper .home .writing .column .idea .middle p {
+    font-size: 7px;
+    line-height: 13px;
+    color: #959595;
+  }
+  .App .container .wrapper .home .writing .column .idea .right label {
+    font-size: 3px;
+    padding: 4px 8px;
+    background-color: #181818;
+    border-radius: 1px;
+    letter-spacing: 1px;
+  }
+  .App .container .wrapper .home .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .App .container .wrapper .home .footer p {
+    font-family: "Alex Brush", cursive;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  .App .container .wrapper .home .footer span {
+    font-size: 6px;
+    color: #959595;
+  }
+}/*# sourceMappingURL=global.css.map */
